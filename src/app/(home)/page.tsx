@@ -1,7 +1,7 @@
 import { Suspense, lazy } from "react";
-import Loading from "../components/icons/LoadingIcon";
-import ClickButton from "../components/buttons/ClickButton";
-import styles from "@/styles/page.module.css";
+import Loading from "../components/icons/loading-icon/LoadingIcon";
+import Heart from "../components/heart/Heart";
+import styles from "./page.module.css";
 
 export const metadata = {
 	title: "Home",
@@ -14,8 +14,7 @@ export default function HomePage() {
 		<>
 			<Suspense fallback={<Loading />}>
 				<div className={styles.container}>
-					<ClickButton />
-					<p className={`${styles.clickText} slideX`}>클릭하세요!</p>
+					<Heart />
 				</div>
 			</Suspense>
 		</>

@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import styles from "@/styles/heartIcon.module.css";
+import styles from "./heartIcon.module.css";
 
 export default function heartIcon() {
 	return (
