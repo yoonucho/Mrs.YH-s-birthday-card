@@ -17,6 +17,7 @@ html {
 	--hover-color: #d1ccdf;
 	--result-hover-color: #e6eaf3;
 	--error-color: #ff619a;
+	--heart-color: #c10c0c;
 
 	/* Sub colors */
 	--sub-light-color: rgb(241, 243, 253);
@@ -152,4 +153,31 @@ select {
 	background-repeat: no-repeat;
 	background-position: 98% 50%;
 	background-size: 20px 20px;
+}
+
+/* Animation keyframes */
+
+.slideX {
+	animation: slideX 1s 0.7s ease-in forwards;
+	-webkit-animation: slideX 1s 0.7s ease-in forwards;
+}
+
+@keyframes slideX {
+	0% {
+		opacity: 0;
+		margin-left: -100%;
+	}
+	100% {
+		opacity: 1;
+		margin-left: 0;
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }

@@ -1,6 +1,7 @@
 import { Suspense, lazy } from "react";
 import Loading from "../components/icons/LoadingIcon";
-import Logo from "../components/Logo";
+import ClickButton from "../components/buttons/ClickButton";
+import styles from "@/styles/page.module.css";
 
 export const metadata = {
 	title: "Home",
@@ -12,7 +13,10 @@ export default function HomePage() {
 	return (
 		<>
 			<Suspense fallback={<Loading />}>
-				<Logo />
+				<div className={styles.container}>
+					<ClickButton />
+					<p className={`${styles.clickText} slideX`}>클릭하세요!</p>
+				</div>
 			</Suspense>
 		</>
 	);
