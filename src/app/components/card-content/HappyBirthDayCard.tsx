@@ -5,6 +5,7 @@ import Image from "next/image";
 import Typewriter from "typewriter-effect";
 import Youtube from "./youtube/Youtube";
 import HappyBirthDayImg from "./images/HappyBirthDayImg";
+import AuthorList from "./author/AuthorList";
 import styles from "./cardContent.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp, faChevronDown } from "@fortawesome/free-solid-svg-icons";
@@ -67,7 +68,12 @@ export default function HappyBirthDayCard() {
 						)}
 					</>
 				</div>
-				{showContent && <Youtube />}
+				{showContent && (
+					<>
+						<Youtube />
+						<AuthorList />
+					</>
+				)}
 			</article>
 		</div>
 	);
