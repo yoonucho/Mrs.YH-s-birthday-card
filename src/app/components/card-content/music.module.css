@@ -1,0 +1,22 @@
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+	color: var(--primary-font-color);
+}
+
+.inner button {
+	padding: 1rem;
+}
+
+.inner svg {
+	color: var(--primary-font-color);
+}

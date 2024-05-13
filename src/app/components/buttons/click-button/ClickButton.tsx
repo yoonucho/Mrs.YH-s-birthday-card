@@ -1,6 +1,5 @@
-"use client";
 import React, { useRef } from "react";
-import HeartIcon from "../../icons/heart-icon/HeartIcon";
+import HeartIcon from "../../icons/heart/HeartIcon";
 import useShowCardStore from "@/app/stores/useShowCardStore";
 import styles from "./clickBtn.module.css";
 
@@ -11,8 +10,10 @@ export default function ClickButton() {
 	const audioRef = useRef<HTMLAudioElement>(null);
 
 	const handleClick = () => {
-		if (audioRef.current) audioRef.current?.play();
-		closeHeart();
+		if (audioRef.current) {
+			audioRef.current?.play();
+			audioRef.current.onended = () => closeHeart();
+		}
 	};
 
 	return (

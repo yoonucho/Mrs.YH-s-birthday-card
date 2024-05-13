@@ -1,5 +1,5 @@
 import { Suspense, lazy } from "react";
-import Loading from "../components/icons/loading-icon/LoadingIcon";
+import Loading from "../components/icons/loading/LoadingIcon";
 import Heart from "../components/heart/Heart";
 import styles from "./page.module.css";
 
