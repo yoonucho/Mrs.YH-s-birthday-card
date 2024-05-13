@@ -4,8 +4,8 @@ import HappyBirthDayMusic from "../components/card-content/HappyBirthDayMusic";
 export default function CardContent() {
 	return (
 		<div>
-			<HappyBirthDayCard />
 			<HappyBirthDayMusic />
+			<HappyBirthDayCard />
 		</div>
 	);
 }

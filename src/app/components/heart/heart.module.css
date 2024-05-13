@@ -7,6 +7,23 @@
 	height: 100vh;
 }
 
+.container > div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.inner {
+	width: 100%;
+	height: calc(100vh - 350px);
+}
+
+.clickInner {
+	width: 100%;
+	height: calc(100vh - 180px);
+}
+
 .clickText {
 	font-size: 6rem;
 	color: var(--primary-black);

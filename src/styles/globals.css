@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+@font-face {
+	font-family: "WavvePADO-Regular";
+	src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/WavvePADO-Regular.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -36,8 +44,8 @@ html {
 	--primary-font-color: #2a2634;
 
 	/* Font Style */
-	--primary-font: "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-		"Noto Color Emoji", sans-serif;
+	--primary-font: "WavvePADO-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+		"Noto Color Emoji";
 
 	--min-font-size: 14px;
 
@@ -164,7 +172,13 @@ select {
 	-webkit-animation: slideX 1s 0.7s ease-in forwards;
 }
 
+.fadeIn {
+	animation: fadeIn 1s ease-in-out forwards;
+	-webkit-animation: fadeIn 1s ease-in-out forwards;
+}
+
 .up {
+	display: inline-block;
 	animation: up 1s ease-in-out infinite alternate;
 	-webkit-animation: up 1s ease-in-out infinite alternate;
 }

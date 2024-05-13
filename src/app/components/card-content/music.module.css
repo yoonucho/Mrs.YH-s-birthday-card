@@ -1,8 +1,13 @@
 .container {
+	position: fixed;
+	top: 0;
+	z-index: 2;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
 	gap: 20px;
+	background-color: var(--primary-gray2);
 }
 
 .inner {

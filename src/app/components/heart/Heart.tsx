@@ -11,14 +11,14 @@ export default function Heart() {
 	return (
 		<div className={styles.container}>
 			{isHeartClose ? (
-				<div>
+				<div className={styles.inner}>
 					<Card />
 				</div>
 			) : (
-				<>
+				<div className={styles.clickInner}>
 					<ClickButton />
 					<p className={`${styles.clickText} slideX`}>클릭하세요!</p>
-				</>
+				</div>
 			)}
 		</div>
 	);
