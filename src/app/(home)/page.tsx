@@ -12,11 +12,9 @@ export const metadata = {
 export default function HomePage() {
 	return (
 		<>
-			<Suspense fallback={<Loading />}>
-				<div className={styles.container}>
-					<Heart />
-				</div>
-			</Suspense>
+			<div className={styles.container}>
+				<Heart />
+			</div>
 		</>
 	);
 }
