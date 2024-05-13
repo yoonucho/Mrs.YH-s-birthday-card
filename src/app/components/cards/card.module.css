@@ -16,12 +16,13 @@
 .openCardBtn > img {
 	width: 300px;
 	height: 300px;
+	margin: 0 auto;
 }
 
 .heartIconContainer {
 	position: absolute;
 	top: 52%;
-	left: 46%;
+	left: 51%;
 	transform: translate(-50%, -50%);
 	-webkit-transform: translate(-50%, -50%);
 	-moz-transform: translate(-50%, -50%);

@@ -2,10 +2,10 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import styles from "./cardContent.module.css";
 import Typewriter from "typewriter-effect";
 import Youtube from "./youtube/Youtube";
 import HappyBirthDayImg from "./images/HappyBirthDayImg";
+import styles from "./cardContent.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
@@ -32,9 +32,9 @@ export default function HappyBirthDayCard() {
 	return (
 		<div className={styles.container}>
 			<article className={styles.cardInner}>
-				<figure className={styles.cardImg}>
+				{/* <figure className={styles.cardImg}>
 					<Image src="/assets/images/card-img.jpg" alt="happy birthday card" width={0} height={0} sizes="100vw" />
-				</figure>
+				</figure> */}
 				<div className={`${styles.cardHeader} fadeIn`}>
 					<h1>🎉정여사님 오신날🎉 </h1>
 					<HappyBirthDayImg />
