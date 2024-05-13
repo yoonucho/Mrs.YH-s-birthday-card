@@ -1,0 +1,16 @@
+.iconContainer {
+	position: absolute;
+	top: 39%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+}
+
+.icon {
+	width: auto;
+	height: 80px;
+	margin: 6px 3px 0 0;
+	background-color: var(--primary-color);
+	border-radius: 50%;
+	box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.21);
+}

@@ -1,0 +1,251 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+:root {
+	/* Main colors */
+	--primary-color: #8d80b0;
+	--accent-color: #8397c4;
+	--hover-color: #d1ccdf;
+	--result-hover-color: #e6eaf3;
+	--error-color: #ff619a;
+	--heart-color: #c10c0c;
+
+	/* Sub colors */
+	--sub-light-color: rgb(241, 243, 253);
+
+	/* Gray */
+	--primary-gray1: #5c5c5c;
+	--primary-gray2: #b9b9b9;
+	--primary-gray3: #d9d9d9;
+
+	/* B&W */
+	--primary-white: #ffffff;
+	--primary-black: #0e0e0e;
+
+	/* Font */
+	--primary-title-color: #62597b;
+	--primary-font-color: #2a2634;
+
+	/* Font Style */
+	--primary-font: "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+		"Noto Color Emoji", sans-serif;
+
+	--min-font-size: 14px;
+
+	/* Box Shadow */
+	--shadow1: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+
+	/* Transition */
+	--transition-1: all 0.3s linear;
+}
+
+p,
+span,
+h1,
+h2,
+h3 {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	font-family: var(--primary-font);
+	overflow-x: auto;
+	overflow-y: auto;
+	min-height: 100%;
+	font-size: 1.4rem;
+	font-weight: 600;
+	background-color: var(--sub-light-color);
+}
+
+dl,
+ul,
+ol,
+menu,
+li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* Responsive img, video */
+img,
+video {
+	display: block;
+	overflow: hidden;
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: cover;
+}
+
+a {
+	color: var(--primary-black);
+	text-decoration: none;
+}
+
+button {
+	border: 0;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+a,
+button {
+	transition: all ease 0.5s;
+	-webkit-transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
+	-ms-transition: all ease 0.5s;
+	-o-transition: all ease 0.5s;
+}
+
+a,
+button,
+span {
+	letter-spacing: 0;
+}
+
+h1,
+h2 {
+	color: var(--primary-title-color);
+}
+
+h1 {
+	font-family: var(--primary-title-font);
+	margin-bottom: 0;
+	font-size: min(5vw, 60px);
+}
+
+h2 {
+	margin-bottom: 6px;
+	font-size: min(3vw, 40px);
+}
+
+textarea::placeholder {
+	color: #a8a8a8;
+}
+
+input:focus {
+	border: 1px solid var(--accent-color);
+	outline: none;
+	outline-offset: 2px;
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-image: url("/assets/images/arrow-down.svg");
+	background-repeat: no-repeat;
+	background-position: 98% 50%;
+	background-size: 20px 20px;
+}
+
+/* Animation keyframes */
+
+.slideX {
+	animation: slideX 1s 0.7s ease-in forwards;
+	-webkit-animation: slideX 1s 0.7s ease-in forwards;
+}
+
+.up {
+	animation: up 1s ease-in-out infinite alternate;
+	-webkit-animation: up 1s ease-in-out infinite alternate;
+}
+
+.ballonRise {
+	opacity: 0;
+	animation: balloonRise 6s ease-in-out forwards;
+}
+
+.scale {
+	animation: scale 1s ease-in-out infinite alternate;
+	-webkit-animation: scale 1s ease-in-out infinite alternate;
+}
+
+@keyframes slideX {
+	0% {
+		opacity: 0;
+		margin-left: -100%;
+	}
+	100% {
+		opacity: 1;
+		margin-left: 0;
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes up {
+	0% {
+		transform: translateY(0px);
+		-webkit-transform: translateY(0px);
+		-moz-transform: translateY(0px);
+		-ms-transform: translateY(0px);
+		-o-transform: translateY(0px);
+	}
+
+	100% {
+		transform: translateY(-5px);
+		-webkit-transform: translateY(-5px);
+		-moz-transform: translateY(-5px);
+		-ms-transform: translateY(-5px);
+		-o-transform: translateY(-5px);
+	}
+}
+
+@keyframes balloonRise {
+	0% {
+		transform: translateY(0) scale(1);
+		opacity: 1;
+		-webkit-transform: translateY(0) scale(1);
+		-moz-transform: translateY(0) scale(1);
+		-ms-transform: translateY(0) scale(1);
+		-o-transform: translateY(0) scale(1);
+	}
+	100% {
+		transform: translateY(-200%) scale(0.3) rotate(360deg);
+		opacity: 0;
+		-webkit-transform: translateY(-200%) scale(0.3) rotate(360deg);
+		-moz-transform: translateY(-200%) scale(0.3) rotate(360deg);
+		-ms-transform: translateY(-200%) scale(0.3) rotate(360deg);
+		-o-transform: translateY(-200%) scale(0.3) rotate(360deg);
+	}
+}
+
+@keyframes scale {
+	0%,
+	90% {
+		transform: scale(1);
+	}
+	45% {
+		transform: scale(1.25);
+		-webkit-transform: scale(1.25);
+		-moz-transform: scale(1.25);
+		-ms-transform: scale(1.25);
+		-o-transform: scale(1.25);
+	}
+}

@@ -1,0 +1,11 @@
+.container {
+	position: relative;
+	z-index: 5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.heartIcon {
+	color: var(--heart-color);
+}
