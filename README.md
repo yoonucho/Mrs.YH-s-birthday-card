@@ -1,4 +1,4 @@
-# 사이드프로젝트 - YU캘린더
+# Mrs.YH-s-birthday-card
 
 <!-- ![preview](https://github.com/yoonucho/yu-calendar/assets/2981954/0d656087-024f-4bc2-8723-d537e376976f) -->
 
