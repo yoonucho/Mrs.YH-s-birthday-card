@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlay, faPause } from "@fortawesome/free-solid-svg-icons";
+import { faPlay, faPause, faMusic } from "@fortawesome/free-solid-svg-icons";
 import styles from "./music.module.css";
 
 export default function HappyBirthDayMusic() {
@@ -53,6 +53,8 @@ export default function HappyBirthDayMusic() {
 			{showPlayButton && (
 				<div className={styles.container}>
 					<div className={styles.inner}>
+						<FontAwesomeIcon icon={faMusic} />
+						<span>BGM</span>
 						<span>재시작</span>
 						<button className="fa-2x" onClick={rePlayMusic}>
 							<FontAwesomeIcon icon={faPlay} />
