@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 사이드프로젝트 - YU캘린더
 
-## Getting Started
+<!-- ![preview](https://github.com/yoonucho/yu-calendar/assets/2981954/0d656087-024f-4bc2-8723-d537e376976f) -->
 
-First, run the development server:
+                                                  
+## 개발 환경
 
-```bash
+* **Framewrok** : Node.js(>=18.18.0), Next.js 14
+* **Language** : TypeScript
+
+
+## 시작하기
+ 
+### 1. 저장소 클론
+~~~sh
+git clone https://github.com/yoonucho/Mrs.YH-s-birthday-card.git
+~~~
+
+### 2. node.js 설치(>=18.18.0)
+https://nodejs.org/en/download
+
+
+### 3. 모듈 설치 & 실행 
+
+~~~sh
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+~~~
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Trouble Shooting 
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+* [외부 이미지 호스트 허용하기](https://www.notion.so/tomorrowcho/6371ae27292644a2bc7126ad0fe4bd59)
+* [TypeScript에서 offsetHeight 사용 시 발생하는 오류와 해결 방법](https://www.notion.so/tomorrowcho/TypeScript-offsetHeight-8e6cc35e85fa44458f277cb8f4c1aea7)
+* [코드 한 조각으로 생일 파티 분위기 띄우기](https://www.notion.so/tomorrowcho/af142d22fb3f47f0898875309617dad7)
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## 배포
+https://mrs-yh-s-birthday-card.vercel.app
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 요구사항 명세서
+[요구사항 명세서](https://www.notion.so/tomorrowcho/3961844ec15c4a9b859a30376712b0f6)
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
