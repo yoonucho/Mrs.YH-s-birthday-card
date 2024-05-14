@@ -1,5 +1,6 @@
 .container {
 	width: 100%;
+	margin: 10px auto;
 	padding: 10px;
 	font-weight: normal;
 	background-color: var(--sub-light-color);
@@ -16,13 +17,33 @@
 	gap: 10px;
 	width: 100%;
 	margin: 10px 0;
+	color: var(--primary-title-color);
+}
+
+.container a {
+	color: var(--primary-gray1);
+}
+
+.container span {
+	display: block;
+}
+
+.container span,
+.container a {
+	line-height: 1.2;
 }
 
 .container p {
-	margin-bottom: 10px;
+	margin: 10px 0;
+	color: var(--primary-font-color);
+	font-size: 1.6rem;
 }
 
 .imgAuthor {
 	display: block;
-	margin-top: 20px;
+	margin: 20px 0 10px;
+}
+
+.imgAuthor + div {
+	margin-bottom: 30px;
 }
