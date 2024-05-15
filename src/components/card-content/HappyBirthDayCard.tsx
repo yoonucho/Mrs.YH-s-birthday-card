@@ -1,17 +1,18 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Typewriter from "typewriter-effect";
-import Youtube from "./youtube/Youtube";
+import CardHeader from "./happy-birthday-card/CardHeader";
 import HappyBirthDayImg from "./images/HappyBirthDayImg";
+import Youtube from "./youtube/Youtube";
 import AuthorList from "./author/AuthorList";
-import styles from "./cardContent.module.css";
+import useShowContentStore from "@/stores/useShowContentStore";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp, faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import styles from "./cardContent.module.css";
 
-export default function HappyBirthDayCard() {
-	const [showScrollButton, setShowScrollButton] = useState(false);
+const HappyBirthDayCard: React.FC = () => {
 	const [showContent, setShowContent] = useState(false);
+	const { showScrollButton } = useShowContentStore();
 
 	useEffect(() => {
 		const element = document.querySelector(`.${styles.hiddenContainer}`) as HTMLElement;
@@ -22,7 +23,7 @@ export default function HappyBirthDayCard() {
 		}
 	}, [showContent]);
 
-	const scrollToContent = () => {
+	const scrollToContent = (): void => {
 		// showContent 상태를 토글
 		setShowContent(prev => !prev);
 	};
@@ -30,28 +31,7 @@ export default function HappyBirthDayCard() {
 	return (
 		<div className={styles.container}>
 			<article className={styles.cardInner}>
-				{/* <figure className={styles.cardImg}>
-					<Image src="/assets/images/card-img.jpg" alt="happy birthday card" width={0} height={0} sizes="100vw" />
-				</figure> */}
-				<div className={`${styles.cardHeader} fadeIn`}>
-					<h1>🎉정여사님오신날🎉 </h1>
-					<Typewriter
-						onInit={typewriter => {
-							typewriter
-								.pauseFor(2000)
-								.typeString('<span style="color: #DA70D6;font-size: 4rem">정윤희</span>여사님의 16번째')
-								.deleteChars(4)
-								.typeString('<strong><span style="color: var(--accent-color);font-size: 4rem">66</span></strong>번째 ')
-								.typeString("탄신 경축")
-								.deleteChars(6)
-								.typeString('<strong><span style="color: #DA70D6;font-size: 4rem"> 생신</span>을 <span style="color: #DA70D6;font-size: 4rem">축하</span></strong>드립니다!')
-								.callFunction(() => {
-									setShowScrollButton(true);
-								})
-								.start();
-						}}
-					/>
-				</div>
+				<CardHeader />
 				<div className={styles.cardBody}>
 					<HappyBirthDayImg />
 					{showScrollButton && (
@@ -70,4 +50,6 @@ export default function HappyBirthDayCard() {
 			</article>
 		</div>
 	);
-}
+};
+
+export default HappyBirthDayCard;
