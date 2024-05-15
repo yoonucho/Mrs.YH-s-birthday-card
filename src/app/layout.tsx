@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 	},
 	openGraph: {
 		title: "정여사님의 생신을 축하합니다",
-		description: "",
+		description: "정윤희여사님의 66번째 생신을 축하드립니다!",
 		siteName: "정여사님의 생신을 축하합니다",
 		images: { url: "https://mrs-yh-s-birthday-card.vercel.app/assets/images/yu-open-graph.png" },
 		url: "https://mrs-yh-s-birthday-card.vercel.app",
