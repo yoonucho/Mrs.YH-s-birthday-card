@@ -1,6 +1,6 @@
 import OpenCard from "./OpenCard";
 import CloseCard from "./CloseCard";
-import useShowCardStore from "@/app/stores/useShowCardStore";
+import useShowCardStore from "@/stores/useShowCardStore";
 
 export default function Card() {
 	const { isCardOpen } = useShowCardStore();

@@ -1,6 +1,6 @@
 import { Suspense } from "react";
-import Loading from "../components/icons/loading/LoadingIcon";
-import Heart from "../components/heart/Heart";
+import Loading from "@/components/icons/loading/LoadingIcon";
+import Heart from "@/components/heart/Heart";
 import styles from "./page.module.css";
 
 export const metadata = {

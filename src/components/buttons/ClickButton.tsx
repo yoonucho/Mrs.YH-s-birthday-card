@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
-import HeartIcon from "../../icons/heart/HeartIcon";
-import useShowCardStore from "@/app/stores/useShowCardStore";
+import HeartIcon from "../icons/heart/HeartIcon";
+import useShowCardStore from "@/stores/useShowCardStore";
 import styles from "./clickBtn.module.css";
 
 export default function ClickButton() {

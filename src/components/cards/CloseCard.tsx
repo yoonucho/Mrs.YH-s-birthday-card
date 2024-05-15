@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import Image from "next/image";
-import useShowCardStore from "@/app/stores/useShowCardStore";
+import useShowCardStore from "@/stores/useShowCardStore";
 import HeartIcon from "../icons/heart/HeartIcon";
 import styles from "./card.module.css";
 

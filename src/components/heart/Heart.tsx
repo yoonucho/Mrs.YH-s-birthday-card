@@ -1,7 +1,7 @@
 "use client";
 
-import ClickButton from "../buttons/click-button/ClickButton";
-import useShowCardStore from "@/app/stores/useShowCardStore";
+import ClickButton from "../buttons/ClickButton";
+import useShowCardStore from "@/stores/useShowCardStore";
 import Card from "../cards/Card";
 import styles from "./heart.module.css";
 
