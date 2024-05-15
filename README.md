@@ -1,6 +1,11 @@
-# Mrs.YH-s-birthday-card
+# 정여사님오신날
 
-https://gist.github.com/assets/2981954/f9c6e839-b899-41fd-93ee-30f045ccd86a
+## 구현 이유
+
+엄마의 생신이 부처님오신날과 겹쳐, 이를 모티브로 '정여사님오신날'을 기념하는 이벤트 페이지를 만들었습니다. 
+이 페이지는 매년 동생이 제작하는 영상과 콜라보하여 함께 제작되었습니다!
+
+https://gist.github.com/assets/2981954/58d78288-bbe9-4a74-8b5b-0da1c9c53559
 
 <!-- <details>
   <summary>
