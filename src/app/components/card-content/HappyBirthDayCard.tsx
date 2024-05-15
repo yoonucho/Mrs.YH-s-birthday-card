@@ -34,7 +34,7 @@ export default function HappyBirthDayCard() {
 					<Image src="/assets/images/card-img.jpg" alt="happy birthday card" width={0} height={0} sizes="100vw" />
 				</figure> */}
 				<div className={`${styles.cardHeader} fadeIn`}>
-					<h1>🎉정여사님 오신날🎉 </h1>
+					<h1>🎉정여사님오신날🎉 </h1>
 					<Typewriter
 						onInit={typewriter => {
 							typewriter
