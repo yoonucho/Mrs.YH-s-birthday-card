@@ -55,7 +55,7 @@ export default function HappyBirthDayCard() {
 				<div className={styles.cardBody}>
 					<HappyBirthDayImg />
 					{showScrollButton && (
-						<button className={styles.scrollBtn} onClick={scrollToContent}>
+						<button aria-label="화살표 클릭하면 숨겨진 콘텐츠로 이동" className={styles.scrollBtn} onClick={scrollToContent}>
 							<span className={styles.btnText}>화살표버튼을 클릭해주세요!</span>
 							<span className={`fa-2x up`}>
 								<FontAwesomeIcon icon={showContent ? faChevronUp : faChevronDown} />
@@ -63,7 +63,6 @@ export default function HappyBirthDayCard() {
 						</button>
 					)}
 				</div>
-
 				<div className={`${styles.hiddenContainer} ${showContent ? `${styles.visible}` : ""}`}>
 					<Youtube />
 					<AuthorList />

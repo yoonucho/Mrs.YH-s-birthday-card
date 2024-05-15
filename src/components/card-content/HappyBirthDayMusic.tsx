@@ -56,13 +56,13 @@ export default function HappyBirthDayMusic() {
 						<FontAwesomeIcon icon={faMusic} />
 						<span>BGM</span>
 						<span>재시작</span>
-						<button className="fa-2x" onClick={rePlayMusic}>
+						<button aria-label="재시작" className="fa-2x" onClick={rePlayMusic}>
 							<FontAwesomeIcon icon={faPlay} />
 						</button>
 					</div>
 					<div className={styles.inner}>
 						<span>멈춤</span>
-						<button className="fa-2x" onClick={pauseMusic}>
+						<button aria-label="음악 멈춤" className="fa-2x" onClick={pauseMusic}>
 							<FontAwesomeIcon icon={faPause} />
 						</button>
 					</div>

@@ -17,7 +17,7 @@ export default function CloseCard() {
 	};
 	return (
 		<div className={styles.container}>
-			<button className={`${styles.openCardBtn} up`} onClick={handleClick}>
+			<button aria-label="카드봉투 클릭" className={`${styles.openCardBtn} up`} onClick={handleClick}>
 				<audio ref={audioRef} src="/sounds/card-open.wav" />
 				<div className={styles.heartIconContainer}>
 					<HeartIcon />

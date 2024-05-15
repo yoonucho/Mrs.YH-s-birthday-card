@@ -19,7 +19,7 @@ export default function ClickButton() {
 	return (
 		<div className={styles.container}>
 			<audio ref={audioRef} src="/sounds/click-button.wav" />
-			<button className={styles.clickBtn} onClick={handleClick}>
+			<button aria-label="하트아이콘 클릭" className={styles.clickBtn} onClick={handleClick}>
 				<HeartIcon />
 			</button>
 		</div>
