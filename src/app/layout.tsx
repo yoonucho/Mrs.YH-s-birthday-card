@@ -6,7 +6,7 @@ export const metadata: Metadata = {
 		template: "정여사님의 생신을 축하합니다 | %s",
 		default: "정여사님의 축하 카드 페이지",
 	},
-	description: "",
+	description: "정윤희여사님의 66번째 생신을 축하드립니다!",
 	icons: {
 		icon: "/favicon.ico",
 	},
