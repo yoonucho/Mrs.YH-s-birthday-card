@@ -1,0 +1,19 @@
+.cardFooter {
+	opacity: 0;
+	height: 0;
+	pointer-events: none;
+}
+
+.cardFooter > div {
+	height: 0;
+}
+
+.visible {
+	opacity: 1;
+	height: auto;
+	pointer-events: unset;
+}
+
+.visible > div {
+	height: auto;
+}

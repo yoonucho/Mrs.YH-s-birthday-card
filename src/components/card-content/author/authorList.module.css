@@ -1,0 +1,57 @@
+.container {
+	width: 100%;
+	margin: 10px auto;
+	padding: 10px;
+	font-weight: normal;
+	background-color: var(--sub-light-color);
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+.container > div {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	width: 100%;
+	margin: 10px 0;
+	color: var(--primary-title-color);
+}
+
+.container a {
+	color: var(--primary-gray1);
+}
+
+.container span {
+	display: block;
+}
+
+.container span,
+.container a {
+	line-height: 1.2;
+}
+
+.container p {
+	margin: 10px 0;
+	color: var(--primary-font-color);
+	font-size: 1.6rem;
+}
+
+.imgAuthor {
+	display: block;
+	margin: 20px 0 0;
+}
+
+.imgAuthor + div {
+	margin: 5px 0 0;
+}
+
+.imgAuthor:nth-last-of-type(1) + div {
+	margin-bottom: 30px;
+}
+
+.container p + p {
+	margin-top: -5px;
+}

@@ -1,15 +1,15 @@
-import { Suspense, lazy } from "react";
-import Loading from "../components/icons/loading/LoadingIcon";
-import Heart from "../components/heart/Heart";
+import { Suspense } from "react";
+import Loading from "@/components/icons/loading/LoadingIcon";
+import Heart from "@/components/heart/Heart";
 import styles from "./page.module.css";
 
 export const metadata = {
 	title: "Home",
 };
 
-// const Main = lazy(() => import("@/components/home/Main"));
+// const Main = lazy(() => import("@/components/heart/Heart"));
 
-export default function HomePage() {
+const HomePage: React.FC = () => {
 	return (
 		<>
 			<Suspense fallback={<Loading />}>
@@ -19,6 +19,8 @@ export default function HomePage() {
 			</Suspense>
 		</>
 	);
-}
+};
+
+export default HomePage;
 
 export const runtime = "edge";
