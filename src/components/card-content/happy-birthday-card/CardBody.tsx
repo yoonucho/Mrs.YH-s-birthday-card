@@ -2,8 +2,7 @@ import HappyBirthDayImg from "../images/HappyBirthDayImg";
 import useShowContentStore from "@/stores/useShowContentStore";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp, faChevronDown } from "@fortawesome/free-solid-svg-icons";
-import styles from "../cardContent.module.css";
-import Card from "@/components/cards/Card";
+import styles from "./cardBody.module.css";
 
 const CardBody: React.FC = () => {
 	const { showContent, showScrollButton } = useShowContentStore();

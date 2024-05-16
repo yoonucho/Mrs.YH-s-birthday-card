@@ -3,9 +3,8 @@
 import { useEffect } from "react";
 import CardHeader from "./happy-birthday-card/CardHeader";
 import CardBody from "./happy-birthday-card/CardBody";
+import CardFooter from "./happy-birthday-card/CardFooter";
 import useShowContentStore from "@/stores/useShowContentStore";
-import Youtube from "./youtube/Youtube";
-import AuthorList from "./author/AuthorList";
 import styles from "./cardContent.module.css";
 
 const HappyBirthDayCard: React.FC = () => {
@@ -15,7 +14,7 @@ const HappyBirthDayCard: React.FC = () => {
 		const element = document.querySelector(`.${styles.hiddenContainer}`) as HTMLElement;
 		if (element) {
 			const yCoord = element.offsetHeight - 50;
-			console.log(yCoord);
+			// console.log(yCoord);
 			window.scrollTo({ top: yCoord, behavior: "smooth" });
 		}
 	}, [showContent]);
@@ -25,10 +24,7 @@ const HappyBirthDayCard: React.FC = () => {
 			<article className={styles.cardInner}>
 				<CardHeader />
 				<CardBody />
-				<div className={`${styles.hiddenContainer} ${showContent ? `${styles.visible}` : ""}`}>
-					<Youtube />
-					<AuthorList />
-				</div>
+				<CardFooter />
 			</article>
 		</div>
 	);

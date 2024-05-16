@@ -1,5 +1,6 @@
 import TypeWriterText from "./TypeWriterText";
-import styles from "../cardContent.module.css";
+import styles from "./cardHeader.module.css";
+
 
 const CardHeader: React.FC = () => {
 	return (
