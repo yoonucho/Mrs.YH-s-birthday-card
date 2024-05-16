@@ -9,7 +9,7 @@ export const metadata = {
 
 // const Main = lazy(() => import("@/components/heart/Heart"));
 
-export default function HomePage() {
+const HomePage: React.FC = () => {
 	return (
 		<>
 			<Suspense fallback={<Loading />}>
@@ -19,6 +19,8 @@ export default function HomePage() {
 			</Suspense>
 		</>
 	);
-}
+};
+
+export default HomePage;
 
 export const runtime = "edge";

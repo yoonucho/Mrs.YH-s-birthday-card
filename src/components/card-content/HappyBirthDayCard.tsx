@@ -11,7 +11,7 @@ const HappyBirthDayCard: React.FC = () => {
 	const { showContent } = useShowContentStore();
 
 	useEffect(() => {
-		const element = document.querySelector(`.${styles.hiddenContainer}`) as HTMLElement;
+		const element = document.querySelector(`.${styles.cardBody}`) as HTMLElement;
 		if (element) {
 			const yCoord = element.offsetHeight - 50;
 			// console.log(yCoord);

@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay, faPause, faMusic } from "@fortawesome/free-solid-svg-icons";
 import styles from "./music.module.css";
 
-export default function HappyBirthDayMusic() {
+const HappyBirthDayMusic: React.FC = () => {
 	const effectSoundRef = useRef<HTMLAudioElement>(null);
 	const birthdayMusicRef = useRef<HTMLAudioElement>(null);
 	const [showPlayButton, setShowPlayButton] = useState(false);
@@ -14,7 +14,7 @@ export default function HappyBirthDayMusic() {
 		// effectSoundRef.current를 지역 변수에 할당
 		const effectAudio = effectSoundRef.current;
 
-		const handleEffectEnd = () => {
+		const handleEffectEnd = (): void => {
 			if (birthdayMusicRef.current) {
 				birthdayMusicRef.current?.play();
 				setShowPlayButton(true);
@@ -26,20 +26,20 @@ export default function HappyBirthDayMusic() {
 			effectAudio.addEventListener("ended", handleEffectEnd);
 		}
 
-		return () => {
+		return (): void => {
 			if (effectAudio) {
 				effectAudio.removeEventListener("ended", handleEffectEnd);
 			}
 		};
 	}, []);
 
-	const pauseMusic = () => {
+	const pauseMusic = (): void => {
 		if (birthdayMusicRef.current) {
 			birthdayMusicRef.current.pause();
 		}
 	};
 
-	const rePlayMusic = () => {
+	const rePlayMusic = (): void => {
 		if (birthdayMusicRef.current) {
 			birthdayMusicRef.current.play();
 		}
@@ -70,4 +70,6 @@ export default function HappyBirthDayMusic() {
 			)}
 		</div>
 	);
-}
+};
+
+export default HappyBirthDayMusic;

@@ -3,16 +3,16 @@ import HeartIcon from "../icons/heart/HeartIcon";
 import useShowCardStore from "@/stores/useShowCardStore";
 import styles from "./clickBtn.module.css";
 
-export default function ClickButton() {
+const ClickButton: React.FC = () => {
 	// useShowCardStore에서 isCardOpen을 가져옴
 	const { closeHeart } = useShowCardStore();
 	// useRef를 사용하여 audio 태그에 접근
 	const audioRef = useRef<HTMLAudioElement>(null);
 
-	const handleClick = () => {
+	const handleClick = (): void => {
 		if (audioRef.current) {
 			audioRef.current?.play();
-			audioRef.current.onended = () => closeHeart();
+			audioRef.current.onended = (): void => closeHeart();
 		}
 	};
 
@@ -24,4 +24,6 @@ export default function ClickButton() {
 			</button>
 		</div>
 	);
-}
+};
+
+export default ClickButton;

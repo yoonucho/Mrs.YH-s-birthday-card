@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./birthday-images.module.css";
 
-export default function HappyBirthDayImg() {
+const HappyBirthDayImg: React.FC = () => {
 	return (
 		<div className={`${styles.container} fadeIn`}>
 			<figure className={styles.inner}>
@@ -10,4 +10,6 @@ export default function HappyBirthDayImg() {
 			</figure>
 		</div>
 	);
-}
+};
+
+export default HappyBirthDayImg;

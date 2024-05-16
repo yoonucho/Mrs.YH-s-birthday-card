@@ -4,15 +4,15 @@ import useShowCardStore from "@/stores/useShowCardStore";
 import HeartIcon from "../icons/heart/HeartIcon";
 import styles from "./card.module.css";
 
-export default function CloseCard() {
+const CloseCard: React.FC = () => {
 	const { showCard } = useShowCardStore();
 
 	const audioRef = useRef<HTMLAudioElement>(null);
 
-	const handleClick = () => {
+	const handleClick = (): void => {
 		if (audioRef.current) {
 			audioRef.current?.play();
-			audioRef.current.onended = () => showCard();
+			audioRef.current.onended = (): void => showCard();
 		}
 	};
 	return (
@@ -28,4 +28,6 @@ export default function CloseCard() {
 			<p className={`${styles.clickText}`}>카드를 클릭하세요!</p>
 		</div>
 	);
-}
+};
+
+export default CloseCard;

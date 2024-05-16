@@ -5,7 +5,7 @@ import useShowCardStore from "@/stores/useShowCardStore";
 import Card from "../cards/Card";
 import styles from "./heart.module.css";
 
-export default function Heart() {
+const Heart: React.FC = () => {
 	const { isHeartClose } = useShowCardStore();
 
 	return (
@@ -22,4 +22,6 @@ export default function Heart() {
 			)}
 		</div>
 	);
-}
+};
+
+export default Heart;

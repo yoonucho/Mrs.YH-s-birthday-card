@@ -2,7 +2,7 @@ import OpenCard from "./OpenCard";
 import CloseCard from "./CloseCard";
 import useShowCardStore from "@/stores/useShowCardStore";
 
-export default function Card() {
+const Card: React.FC = () => {
 	const { isCardOpen } = useShowCardStore();
 
 	return (
@@ -18,4 +18,6 @@ export default function Card() {
 			)}
 		</>
 	);
-}
+};
+
+export default Card;

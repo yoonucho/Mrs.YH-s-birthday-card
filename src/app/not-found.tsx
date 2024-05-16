@@ -3,9 +3,9 @@ import Image from "next/image";
 import styles from "./not-found.module.css";
 import { useRouter } from "next/navigation";
 
-export default function NotFound() {
+const NotFound: React.FC = () => {
 	const router = useRouter();
-	const handleClick = () => {
+	const handleClick = (): void => {
 		router.back();
 	};
 
@@ -18,4 +18,6 @@ export default function NotFound() {
 			</button>
 		</main>
 	);
-}
+};
+
+export default NotFound;

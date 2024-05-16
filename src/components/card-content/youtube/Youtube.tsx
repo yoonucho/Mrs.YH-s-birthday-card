@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCirclePlay } from "@fortawesome/free-solid-svg-icons";
 import styles from "./youtube.module.css";
 
-export default function Youtube() {
+const Youtube: React.FC = () => {
 	const videoID = "w4fOQDxMmIQ";
 	return (
 		<>
@@ -17,4 +17,6 @@ export default function Youtube() {
 			</div>
 		</>
 	);
-}
+};
+
+export default Youtube;

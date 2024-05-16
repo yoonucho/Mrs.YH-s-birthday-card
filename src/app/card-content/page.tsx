@@ -1,11 +1,13 @@
 import HappyBirthDayCard from "@/components/card-content/HappyBirthDayCard";
 import HappyBirthDayMusic from "@/components/card-content/HappyBirthDayMusic";
 
-export default function CardContent() {
+const CardContent: React.FC = () => {
 	return (
 		<div>
 			<HappyBirthDayMusic />
 			<HappyBirthDayCard />
 		</div>
 	);
-}
+};
+
+export default CardContent;

@@ -1,6 +1,6 @@
 import styles from "./authorList.module.css";
 
-export default function AuthorList() {
+const AuthorList: React.FC = () => {
 	return (
 		<>
 			<div className={styles.container}>
@@ -75,4 +75,6 @@ export default function AuthorList() {
 			</div>
 		</>
 	);
-}
+};
+
+export default AuthorList;
