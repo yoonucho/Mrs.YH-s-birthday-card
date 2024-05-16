@@ -1,18 +1,15 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import CardHeader from "./happy-birthday-card/CardHeader";
-import HappyBirthDayImg from "./images/HappyBirthDayImg";
+import CardBody from "./happy-birthday-card/CardBody";
+import useShowContentStore from "@/stores/useShowContentStore";
 import Youtube from "./youtube/Youtube";
 import AuthorList from "./author/AuthorList";
-import useShowContentStore from "@/stores/useShowContentStore";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronUp, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import styles from "./cardContent.module.css";
 
 const HappyBirthDayCard: React.FC = () => {
-	const [showContent, setShowContent] = useState(false);
-	const { showScrollButton } = useShowContentStore();
+	const { showContent } = useShowContentStore();
 
 	useEffect(() => {
 		const element = document.querySelector(`.${styles.hiddenContainer}`) as HTMLElement;
@@ -23,26 +20,11 @@ const HappyBirthDayCard: React.FC = () => {
 		}
 	}, [showContent]);
 
-	const scrollToContent = (): void => {
-		// showContent 상태를 토글
-		setShowContent(prev => !prev);
-	};
-
 	return (
 		<div className={styles.container}>
 			<article className={styles.cardInner}>
 				<CardHeader />
-				<div className={styles.cardBody}>
-					<HappyBirthDayImg />
-					{showScrollButton && (
-						<button aria-label="화살표 클릭하면 숨겨진 콘텐츠로 이동" className={styles.scrollBtn} onClick={scrollToContent}>
-							<span className={styles.btnText}>화살표버튼을 클릭해주세요!</span>
-							<span className={`fa-2x up`}>
-								<FontAwesomeIcon icon={showContent ? faChevronUp : faChevronDown} />
-							</span>
-						</button>
-					)}
-				</div>
+				<CardBody />
 				<div className={`${styles.hiddenContainer} ${showContent ? `${styles.visible}` : ""}`}>
 					<Youtube />
 					<AuthorList />
