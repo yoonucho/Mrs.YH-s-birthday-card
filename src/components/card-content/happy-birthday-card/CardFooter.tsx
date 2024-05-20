@@ -6,7 +6,7 @@ import styles from "./cardFooter.module.css";
 const CardFooter: React.FC = () => {
 	const { showContent } = useShowContentStore();
 	return (
-		<div className={`${styles.cardFooter} ${showContent ? `${styles.visible}` : ""}`}>
+		<div data-testid="card-footer" className={`${styles.cardFooter} ${showContent ? `${styles.visible}` : ""}`}>
 			<Youtube />
 			<AuthorList />
 		</div>
