@@ -25,6 +25,7 @@ export const create = (<T>(stateCreator: zustand.StateCreator<T>) => {
 }) as typeof zustand.create;
 
 const createStoreUncurried = <T>(stateCreator: zustand.StateCreator<T>) => {
+	console.log("zustand create mock");
 	const store = actualCreateStore(stateCreator);
 	const initialState = store.getInitialState();
 	storeResetFns.add(() => {
@@ -43,6 +44,7 @@ export const createStore = (<T>(stateCreator: zustand.StateCreator<T>) => {
 
 // reset all stores after each test run
 afterEach(() => {
+	console.log("zustand create mock");
 	act(() => {
 		storeResetFns.forEach(resetFn => {
 			resetFn();

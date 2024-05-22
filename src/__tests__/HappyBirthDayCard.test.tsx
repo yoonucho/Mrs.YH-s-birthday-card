@@ -1,26 +1,35 @@
-import { RenderResult, render, screen, within } from "@testing-library/react";
-// import userEvent from "@testing-library/user-event";
+import { RenderResult, render, screen, within, act, waitFor } from "@testing-library/react";
 import HappyBirthDayCard from "../components/card-content/HappyBirthDayCard";
+import userEvent from "@testing-library/user-event";
 import useShowContentStore from "@/stores/useShowContentStore";
-import { act } from "@testing-library/react";
+// import { create } from "zustand";
+
+// interface ShowContentState {
+// 	showContent: boolean;
+// 	showScrollButton: boolean;
+// }
+
+// const useShowContentStore = create<ShowContentState>(set => ({
+// 	showContent: false,
+// 	setShowContent: (): void => set(state => ({ showContent: !state.showContent })),
+// 	showScrollButton: false,
+// 	setShowScrollButton: (value: boolean): void => set({ showScrollButton: value }),
+// }));
 
 const originalState = useShowContentStore.getState();
 
 beforeEach(() => {
-	useShowContentStore.setState(originalState);
+	useShowContentStore.setState(originalState, true);
+	useShowContentStore.setState({ showContent: false, showScrollButton: true });
+
+	window.scrollTo = jest.fn();
+});
+
+afterEach(() => {
+	jest.clearAllMocks();
 });
 
 describe("HappyBirthDayCard", () => {
-	beforeEach(() => {
-		window.scrollTo = jest.fn();
-
-		// useShowContentStore.setState({ showContent: false });
-	});
-
-	afterEach(() => {
-		jest.clearAllMocks();
-	});
-
 	it("renders CardHeader ", () => {
 		renderHappyBirthDayCard();
 
@@ -46,18 +55,27 @@ describe("HappyBirthDayCard", () => {
 		expect(images).toHaveLength(2);
 	});
 
-	it("renders CardFooter ", () => {
+	it("shows content when scroll button is clicked", async () => {
 		renderHappyBirthDayCard();
+		const user = userEvent.setup();
 
-		let cardFooter = screen.getByTestId("card-footer");
-		expect(cardFooter).toHaveClass("cardFooter");
+		// 버튼이 처음에 존재하는지 확인
+		await waitFor(() => {
+			expect(screen.getByRole("button"));
+			console.log("버튼이 존재합니다.");
+		});
+
+		const scrollBtn = screen.getByRole("button");
+
+		// 콘텐츠가 처음에는 보이지 않는지 확인
+		const cardFooter = screen.getByTestId("card-footer");
 		expect(cardFooter).not.toHaveClass("visible");
 
-		// Mock showContent to be true and rerender
-		act(() => {
-			useShowContentStore.setState({ showContent: true });
+		// 버튼을 클릭
+		await act(async () => {
+			await user.click(scrollBtn);
 		});
-		cardFooter = screen.getByTestId("card-footer");
+
 		expect(cardFooter).toHaveClass("cardFooter visible");
 	});
 });
