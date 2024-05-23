@@ -25,7 +25,7 @@ export const create = (<T>(stateCreator: zustand.StateCreator<T>) => {
 }) as typeof zustand.create;
 
 const createStoreUncurried = <T>(stateCreator: zustand.StateCreator<T>) => {
-	console.log("zustand create mock");
+	// console.log("zustand create mock");
 	const store = actualCreateStore(stateCreator);
 	const initialState = store.getInitialState();
 	storeResetFns.add(() => {
@@ -36,7 +36,7 @@ const createStoreUncurried = <T>(stateCreator: zustand.StateCreator<T>) => {
 
 // when creating a store, we get its initial state, create a reset function and add it in the set
 export const createStore = (<T>(stateCreator: zustand.StateCreator<T>) => {
-	console.log("zustand createStore mock");
+	// console.log("zustand createStore mock");
 
 	// to support curried version of createStore
 	return typeof stateCreator === "function" ? createStoreUncurried(stateCreator) : createStoreUncurried;
@@ -44,7 +44,7 @@ export const createStore = (<T>(stateCreator: zustand.StateCreator<T>) => {
 
 // reset all stores after each test run
 afterEach(() => {
-	console.log("zustand create mock");
+	// console.log("zustand create mock");
 	act(() => {
 		storeResetFns.forEach(resetFn => {
 			resetFn();

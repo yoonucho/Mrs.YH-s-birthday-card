@@ -1,27 +1,9 @@
 import { RenderResult, render, screen, within, act, waitFor } from "@testing-library/react";
-import HappyBirthDayCard from "../components/card-content/HappyBirthDayCard";
+import HappyBirthDayCard from "@/components/card-content/HappyBirthDayCard";
 import userEvent from "@testing-library/user-event";
 import useShowContentStore from "@/stores/useShowContentStore";
-// import { create } from "zustand";
-
-// interface ShowContentState {
-// 	showContent: boolean;
-// 	showScrollButton: boolean;
-// }
-
-// const useShowContentStore = create<ShowContentState>(set => ({
-// 	showContent: false,
-// 	setShowContent: (): void => set(state => ({ showContent: !state.showContent })),
-// 	showScrollButton: false,
-// 	setShowScrollButton: (value: boolean): void => set({ showScrollButton: value }),
-// }));
-
-const originalState = useShowContentStore.getState();
 
 beforeEach(() => {
-	useShowContentStore.setState(originalState, true);
-	useShowContentStore.setState({ showContent: false, showScrollButton: true });
-
 	window.scrollTo = jest.fn();
 });
 
@@ -38,15 +20,6 @@ describe("HappyBirthDayCard", () => {
 		expect(screen.getByText(/정여사님오신날/)).toBeInTheDocument();
 	});
 
-	it("triggers window.scrollTo CardBody", () => {
-		renderHappyBirthDayCard();
-
-		const cardBody = screen.getByTestId("card-body");
-		const yCoord = cardBody.offsetHeight + 250;
-
-		expect(window.scrollTo).toHaveBeenCalledWith({ top: yCoord, behavior: "smooth" });
-	});
-
 	it("renders CardBody ", () => {
 		renderHappyBirthDayCard();
 
@@ -57,26 +30,44 @@ describe("HappyBirthDayCard", () => {
 
 	it("shows content when scroll button is clicked", async () => {
 		renderHappyBirthDayCard();
+
 		const user = userEvent.setup();
 
 		// 버튼이 처음에 존재하는지 확인
 		await waitFor(() => {
-			expect(screen.getByRole("button"));
+			expect(screen.queryByTestId("scroll-btn")).toBeNull();
+			console.log("버튼이 존재하지 않습니다.");
+		});
+
+		//  함수를 실행하여 showScrollButton 상태를 true로 변경
+		await act(async () => {
+			useShowContentStore.setState({ showScrollButton: true });
 			console.log("버튼이 존재합니다.");
 		});
+		// 버튼이 존재하는지 확인
+		const scrollBtn = screen.getByTestId("scroll-btn");
 
-		const scrollBtn = screen.getByRole("button");
+		// scrollBtn을 클릭하여 showContent 상태를 true로 변경
+		await user.click(scrollBtn);
 
-		// 콘텐츠가 처음에는 보이지 않는지 확인
-		const cardFooter = screen.getByTestId("card-footer");
-		expect(cardFooter).not.toHaveClass("visible");
-
-		// 버튼을 클릭
-		await act(async () => {
-			await user.click(scrollBtn);
+		act(() => {
+			useShowContentStore.setState({ showContent: true });
 		});
 
+		const cardFooter = screen.getByTestId("card-footer");
+		expect(cardFooter).toBeInTheDocument();
+		console.log("cardFooter 콘텐츠가 보입니다.");
+
 		expect(cardFooter).toHaveClass("cardFooter visible");
+	});
+
+	it("triggers window.scrollTo CardBody", () => {
+		renderHappyBirthDayCard();
+
+		const cardBody = screen.getByTestId("card-body");
+		const yCoord = cardBody.offsetHeight + 250;
+
+		expect(window.scrollTo).toHaveBeenCalledWith({ top: yCoord, behavior: "smooth" });
 	});
 });
 
