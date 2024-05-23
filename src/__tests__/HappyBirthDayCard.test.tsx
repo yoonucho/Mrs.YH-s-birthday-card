@@ -1,7 +1,7 @@
 import { RenderResult, render, screen, within, act, waitFor } from "@testing-library/react";
 import HappyBirthDayCard from "@/components/card-content/HappyBirthDayCard";
-import userEvent from "@testing-library/user-event";
 import useShowContentStore from "@/stores/useShowContentStore";
+import userEvent from "@testing-library/user-event";
 
 beforeEach(() => {
 	window.scrollTo = jest.fn();
