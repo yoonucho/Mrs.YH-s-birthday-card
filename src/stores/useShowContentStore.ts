@@ -15,3 +15,4 @@ const useShowContentStore = create<ShowContentState>(set => ({
 }));
 
 export default useShowContentStore;
+export type { ShowContentState };

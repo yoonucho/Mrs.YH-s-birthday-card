@@ -15,3 +15,4 @@ const useShowCardStore = create<ShowCardState>(set => ({
 }));
 
 export default useShowCardStore;
+export type { ShowCardState };
