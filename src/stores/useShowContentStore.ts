@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
-interface ShowContentState {
+type ShowContentState = {
 	showScrollButton: boolean;
 	showContent: boolean;
 	setShowScrollButton: (value: boolean) => void;
@@ -15,3 +15,4 @@ const useShowContentStore = create<ShowContentState>(set => ({
 }));
 
 export default useShowContentStore;
+export type { ShowContentState };
