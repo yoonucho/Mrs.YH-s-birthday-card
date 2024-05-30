@@ -1,17 +1,17 @@
 import { create } from "zustand";
 
-interface ShowCardState {
+type ShowCardState = {
 	isHeartClose: boolean;
 	isCardOpen: boolean;
 	closeHeart: () => void;
 	showCard: () => void;
-}
+};
 
 const useShowCardStore = create<ShowCardState>(set => ({
 	isHeartClose: false,
 	isCardOpen: false,
-	closeHeart: () => set({ isHeartClose: true }),
-	showCard: () => set({ isCardOpen: true }),
+	closeHeart: (): void => set({ isHeartClose: true }),
+	showCard: (): void => set({ isCardOpen: true }),
 }));
 
 export default useShowCardStore;

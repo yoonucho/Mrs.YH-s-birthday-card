@@ -60,7 +60,6 @@ describe("HappyBirthDayCard", () => {
 		});
 
 		const cardFooter = screen.getByTestId("card-footer");
-		// expect(cardFooter).toBeInTheDocument();
 		expect(cardFooter).toHaveClass("cardFooter visible");
 	});
 
