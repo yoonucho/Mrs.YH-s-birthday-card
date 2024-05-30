@@ -54,6 +54,7 @@ npm run dev
 * [외부 이미지 호스트 허용하기](https://www.notion.so/tomorrowcho/6371ae27292644a2bc7126ad0fe4bd59)
 * [TypeScript에서 offsetHeight 사용 시 발생하는 오류와 해결 방법](https://www.notion.so/tomorrowcho/TypeScript-offsetHeight-8e6cc35e85fa44458f277cb8f4c1aea7)
 * [코드 한 조각으로 생일 파티 분위기 띄우기](https://www.notion.so/tomorrowcho/af142d22fb3f47f0898875309617dad7)
+* [Jest와 react-testing-library로 통합테스트하기](https://www.notion.so/tomorrowcho/Jest-react-testing-library-9574d3bdfd7c4dbdb2e1435f06dc8ffb)
 
 
 ## 배포
