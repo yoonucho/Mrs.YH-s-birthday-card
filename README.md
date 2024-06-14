@@ -25,7 +25,7 @@ https://gist.github.com/assets/2981954/58d78288-bbe9-4a74-8b5b-0da1c9c53559
 
                                                   
 ## 개발 환경
-
+[![StackShare](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/yoonucho/mrs-yh-s-birthday-card)
 * **Framewrok** : Node.js(>=18.18.0), Next.js 14
 * **Language** : TypeScript
 
