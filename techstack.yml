@@ -1,0 +1,410 @@
+repo_name: yoonucho/Mrs.YH-s-birthday-card
+report_id: e7346b9104d7c5c0ebf0f75b6ddefc89
+version: 0.1
+repo_type: Public
+timestamp: '2024-06-14T07:54:08+00:00'
+requested_by: yoonucho
+provider: github
+branch: main
+detected_tools_count: 30
+tools:
+- name: CSS 3
+  description: The latest evolution of the Cascading Style Sheets language
+  website_url: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source_url: https://github.com/yoonucho/Mrs.YH-s-birthday-card
+  detection_source: Repo Metadata
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/yoonucho/Mrs.YH-s-birthday-card
+  detection_source: Repo Metadata
+- name: TypeScript
+  description: A superset of JavaScript that compiles to clean JavaScript output
+  website_url: http://www.typescriptlang.org
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1612/bynNY5dJ.jpg
+  detection_source_url: https://github.com/yoonucho/Mrs.YH-s-birthday-card
+  detection_source: Repo Metadata
+- name: Next.js
+  description: A small framework for server-rendered universal JavaScript apps
+  website_url: https://nextjs.org/
+  version: 14.3.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/5936/nextjs.png
+  detection_source_url: https://github.com/yoonucho/Mrs.YH-s-birthday-card/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: yoonucho
+  last_updated_on: 2024-05-09 14:40:43.000000000 Z
+- name: Node.js
+  description: A platform built on Chrome's JavaScript runtime for easily building
+    fast, scalable network applications
+  website_url: http://nodejs.org/
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/1011/n1JRsFeB_400x400.png
+  detection_source_url: https://github.com/yoonucho/Mrs.YH-s-birthday-card/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: yoonucho
+  last_updated_on: 2024-05-09 14:40:43.000000000 Z
+- name: React
+  description: A JavaScript library for building user interfaces
+  website_url: https://reactjs.org/
+  version: 18.3.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript UI Libraries
+  image_url: https://img.stackshare.io/service/1020/OYIaJ1KK.png
+  detection_source_url: https://github.com/yoonucho/Mrs.YH-s-birthday-card/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: yoonucho
+  last_updated_on: 2024-05-23 12:52:24.000000000 Z
+- name: Zustand
+  description: Bear necessities for state management in React
+  website_url: https://github.com/react-spring/zustand
+  version: 4.5.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Monitoring for Analytics
+  image_url: https://img.stackshare.io/service/11559/zustand.png
+  detection_source_url: https://github.com/yoonucho/Mrs.YH-s-birthday-card/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: yoonucho
+  last_updated_on: 2024-05-20 10:02:25.000000000 Z
+- name: ESLint
+  description: The fully pluggable JavaScript code quality tool
+  website_url: http://eslint.org/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/3337/Q4L7Jncy.jpg
+  detection_source_url: https://github.com/yoonucho/Mrs.YH-s-birthday-card/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: yoonucho
+  last_updated_on: 2024-05-09 14:40:43.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/yoonucho/Mrs.YH-s-birthday-card
+  detection_source: Repo Metadata
+- name: GitHub Actions
+  description: Automate your workflow from idea to production
+  website_url: https://github.com/features/actions
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source_url: https://github.com/yoonucho/Mrs.YH-s-birthday-card/blob/main/.github/workflows/cr.yml
+  detection_source: ".github/workflows/cr.yml"
+  last_updated_by: yoonucho
+  last_updated_on: 2024-05-16 09:29:31.000000000 Z
+- name: Jest
+  description: Painless JavaScript Unit Testing
+  website_url: http://facebook.github.io/jest/
+  version: 29.7.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Javascript Testing Framework
+  image_url: https://img.stackshare.io/service/830/jest.png
+  detection_source_url: https://github.com/yoonucho/Mrs.YH-s-birthday-card/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: yoonucho
+  last_updated_on: 2024-05-09 14:40:43.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/yoonucho/Mrs.YH-s-birthday-card/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: yoonucho
+  last_updated_on: 2024-05-09 14:40:43.000000000 Z
+- name: "@fortawesome/fontawesome-svg-core"
+  description: The iconic font, CSS, and SVG framework
+  package_url: https://www.npmjs.com/@fortawesome/fontawesome-svg-core
+  version: 6.5.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16644/default_50c9ed1615a25628505ab53def64d82450ced26b.png
+  detection_source_url: https://github.com/yoonucho/Mrs.YH-s-birthday-card/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: yoonucho
+  last_updated_on: 2024-05-20 10:02:25.000000000 Z
+- name: "@fortawesome/free-brands-svg-icons"
+  description: The iconic font, CSS, and SVG framework
+  package_url: https://www.npmjs.com/@fortawesome/free-brands-svg-icons
+  version: 6.5.2
+  license: CC-BY-4.0,MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/18314/default_8c7316b1ad57adb78204233fc4608152c3b49ac6.png
+  detection_source_url: https://github.com/yoonucho/Mrs.YH-s-birthday-card/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: yoonucho
+  last_updated_on: 2024-05-20 10:02:25.000000000 Z
+- name: "@fortawesome/free-regular-svg-icons"
+  description: The iconic font, CSS, and SVG framework
+  package_url: https://www.npmjs.com/@fortawesome/free-regular-svg-icons
+  version: 6.5.2
+  license: CC-BY-4.0,MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/18157/default_63cbe387694d6d77dde61448de98c6bd2a9b18de.png
+  detection_source_url: https://github.com/yoonucho/Mrs.YH-s-birthday-card/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: yoonucho
+  last_updated_on: 2024-05-20 10:02:25.000000000 Z
+- name: "@fortawesome/free-solid-svg-icons"
+  description: The iconic font, CSS, and SVG framework
+  package_url: https://www.npmjs.com/@fortawesome/free-solid-svg-icons
+  version: 6.5.2
+  license: CC-BY-4.0,MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16683/default_6dad4e42e12d47cc6edfbdea036dae12f91abebb.png
+  detection_source_url: https://github.com/yoonucho/Mrs.YH-s-birthday-card/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: yoonucho
+  last_updated_on: 2024-05-20 10:02:25.000000000 Z
+- name: "@fortawesome/react-fontawesome"
+  description: Official React component for Font Awesome 5
+  package_url: https://www.npmjs.com/@fortawesome/react-fontawesome
+  version: 0.2.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16936/default_277303773c2bdb575ee8f4bfe869f0a33d6755b2.png
+  detection_source_url: https://github.com/yoonucho/Mrs.YH-s-birthday-card/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: yoonucho
+  last_updated_on: 2024-05-23 12:52:24.000000000 Z
+- name: "@testing-library/jest-dom"
+  description: Custom jest matchers to test the state of the DOM
+  package_url: https://www.npmjs.com/@testing-library/jest-dom
+  version: 6.4.5
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17424/default_1cdcda15ebb7caed879f8340bc212b44c4ec9dac.png
+  detection_source_url: https://github.com/yoonucho/Mrs.YH-s-birthday-card/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: yoonucho
+  last_updated_on: 2024-05-23 12:52:24.000000000 Z
+- name: "@testing-library/react"
+  description: Simple and complete React DOM testing utilities that encourage good
+    testing practices
+  package_url: https://www.npmjs.com/@testing-library/react
+  version: 15.0.7
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16549/default_d522554c6a41cb28d922d6d3ad32ad4afa0e3bb5.png
+  detection_source_url: https://github.com/yoonucho/Mrs.YH-s-birthday-card/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: yoonucho
+  last_updated_on: 2024-05-23 12:52:24.000000000 Z
+- name: "@types/jest"
+  description: TypeScript definitions for Jest
+  package_url: https://www.npmjs.com/@types/jest
+  version: 29.5.12
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15840/default_004658cda9b38934f2871435e9dc15608c86e8be.png
+  detection_source_url: https://github.com/yoonucho/Mrs.YH-s-birthday-card/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: yoonucho
+  last_updated_on: 2024-05-20 10:02:25.000000000 Z
+- name: "@types/node"
+  description: TypeScript definitions for Node.js
+  package_url: https://www.npmjs.com/@types/node
+  version: 20.12.12
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15809/default_5e5e8ac63beda29f31f1844df64d4b8247570a66.png
+  detection_source_url: https://github.com/yoonucho/Mrs.YH-s-birthday-card/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: yoonucho
+  last_updated_on: 2024-05-20 10:02:25.000000000 Z
+- name: "@types/react"
+  description: TypeScript definitions for React
+  package_url: https://www.npmjs.com/@types/react
+  version: 18.3.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15894/default_1d65e37e65b7f80761374f0202776043277d505d.png
+  detection_source_url: https://github.com/yoonucho/Mrs.YH-s-birthday-card/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: yoonucho
+  last_updated_on: 2024-05-23 12:52:24.000000000 Z
+- name: "@types/react-dom"
+  description: TypeScript definitions for React
+  package_url: https://www.npmjs.com/@types/react-dom
+  version: 18.3.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15946/default_54b691c123fc8979741e800e4dcd3936c0f3b246.png
+  detection_source_url: https://github.com/yoonucho/Mrs.YH-s-birthday-card/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: yoonucho
+  last_updated_on: 2024-05-23 12:52:24.000000000 Z
+- name: "@typescript-eslint/eslint-plugin"
+  description: TypeScript plugin for ESLint
+  package_url: https://www.npmjs.com/@typescript-eslint/eslint-plugin
+  version: 7.9.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15982/default_8b5680d4e916298d08363c291a0d6e34c07ceb15.png
+  detection_source_url: https://github.com/yoonucho/Mrs.YH-s-birthday-card/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: yoonucho
+  last_updated_on: 2024-05-20 10:02:25.000000000 Z
+- name: "@typescript-eslint/parser"
+  description: An ESLint custom parser which leverages TypeScript ESTree
+  package_url: https://www.npmjs.com/@typescript-eslint/parser
+  version: 7.9.0
+  license: BSD-2-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15980/default_732016a20524708efe7a4c77497fe9bfeea19ba6.png
+  detection_source_url: https://github.com/yoonucho/Mrs.YH-s-birthday-card/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: yoonucho
+  last_updated_on: 2024-05-20 10:02:25.000000000 Z
+- name: eslint-config-next
+  description: ESLint configuration used by Next.js
+  package_url: https://www.npmjs.com/eslint-config-next
+  version: 14.2.1
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/npm/image.png
+  detection_source_url: https://github.com/yoonucho/Mrs.YH-s-birthday-card/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: yoonucho
+  last_updated_on: 2024-05-23 12:52:24.000000000 Z
+- name: jest-environment-jsdom
+  description: Delightful JavaScript Testing
+  package_url: https://www.npmjs.com/jest-environment-jsdom
+  version: 29.7.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/18413/default_867ef7396016341fd213fa568d6de11cc98fefff.png
+  detection_source_url: https://github.com/yoonucho/Mrs.YH-s-birthday-card/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: yoonucho
+  last_updated_on: 2024-05-20 10:02:25.000000000 Z
+- name: react-dom
+  description: React package for working with the DOM
+  package_url: https://www.npmjs.com/react-dom
+  version: 18.3.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15808/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
+  detection_source_url: https://github.com/yoonucho/Mrs.YH-s-birthday-card/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: yoonucho
+  last_updated_on: 2024-05-23 12:52:24.000000000 Z
+- name: ts-jest
+  description: A preprocessor with source maps support to help use TypeScript with
+    Jest
+  package_url: https://www.npmjs.com/ts-jest
+  version: 29.1.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15864/default_6743ba96cf149a3c3c68a185199f9705d6eff80e.png
+  detection_source_url: https://github.com/yoonucho/Mrs.YH-s-birthday-card/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: yoonucho
+  last_updated_on: 2024-05-20 10:02:25.000000000 Z
+- name: ts-node
+  description: TypeScript execution environment and REPL for node.js
+  package_url: https://www.npmjs.com/ts-node
+  version: 10.9.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15830/default_6743ba96cf149a3c3c68a185199f9705d6eff80e.png
+  detection_source_url: https://github.com/yoonucho/Mrs.YH-s-birthday-card/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: yoonucho
+  last_updated_on: 2024-05-20 10:02:25.000000000 Z
